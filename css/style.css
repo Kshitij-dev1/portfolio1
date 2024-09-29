@@ -332,6 +332,19 @@ button{
     color: blue;
     transition: .5s;
 }
+
+/* POP UP TEXT after clicking SUBMIT */
+
+h5.popuptxt{
+    color: var(--text-white);
+    margin-top: -10px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    left: 200px;
+    top: 70px;
+}
+
 /* footer */
 .footer_wrapper{
     background-color: var(--bg-dark-blue);
