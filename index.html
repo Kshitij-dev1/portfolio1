@@ -22,7 +22,7 @@
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
           <a class="navbar-brand" href="#">
-            <img src="images/logo.png" class="img-fluid" alt="logo">
+            <img src="images/logo6.png" class="img-fluid" alt="logo">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <!-- <span class="navbar-toggler-icon"></span> -->
@@ -78,7 +78,7 @@
     <div class="container">
         <div class="row justify-content-between align-items-center">
             <div class="col-sm-5 mb-4 mb-lg-0">
-                <img src="images/About.jpg" class="img-fluid rounded-3" alt="About-us">
+                <img src="images/About2.jpeg" class="img-fluid rounded-3" alt="About-us">
             </div>
             <div class="col-lg-7 ps-lg-5 text-center text-lg-start">
                 <div class="my-3 my-lg-0">
@@ -318,12 +318,12 @@
                 <div class="mb-4">
                     <textarea name="Message" cols="40" rows="4" class="form-control" id="message" placeholder="Write a Massage....." autocomplete="off" ></textarea>
                 </div>
-                <button type="submit" class="main-btn" style="color:blue;">Submit</button>
+                <button type="submit" class="main-btn">Submit</button>
             </form>
             <h5 class="popuptxt" id="msg"></h5>
            </div>
            <div class="col-lg-6 order-1 mb-4 order-lg-1 mb-lg-0">
-            <img src="./images/About.jpg" alt="photo" class="img-fluid">
+            <img src="./images/contact1.jpeg" alt="photo" class="img-fluid">
            </div>
            
         </div>
@@ -337,7 +337,7 @@
         <div class="row align-items-center">
             <div class="col-lg-4 col-md-6 text-center text-md-start">
                 <div class="footer_logo mb-3 mb-md-0">
-                    <img src="images/logo.png" alt="logo" class="img-fluid" >
+                    <img src="images/logo6.png" alt="logo" class="img-fluid" >
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
@@ -388,7 +388,7 @@
       e.preventDefault()
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
         .then(response => {
-            msg.innerHTML = "Message Sent Successfully :"
+            msg.innerHTML = "Message Sent Successfully &#9996"
             setTimeout(function(){
                 msg.innerHTML =""
             },3000)

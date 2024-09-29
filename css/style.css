@@ -64,8 +64,8 @@ section{
     transition:all .4s ease-in-out;
     padding: 10px 27px;
     background-color: transparent;
-    border: 2px solid var(--bg-dark-blue);
-    color: var(--bg-dark-blue);
+    border: 2px solid var(--bg-white);
+    color: var(--bg-white);
     font-weight: 500;
     font-size: 14px;
     text-transform: uppercase;
@@ -170,7 +170,7 @@ button{
     position: relative;
     font-size: 16px;
     font-family: 500;
-    color: var(--bg-dark-blue);
+    color: var(--primary-color);
     display: inline-block;
 }
 .header_wrapper .nav-item .nav-link::after{
@@ -198,7 +198,7 @@ button{
     top: 0;
     left: 0;
     width: 100%;
-    background-color: var(--gray-color);
+    background-color: var(--bg-dark-blue);
     transition: .6s;
     box-shadow: 0 4px 6px 0 rgb(12,0,46,0.5);
     -webkit-box-shadow: 0 4px 6px 0 rgb(12,0,46,0.5);
@@ -304,7 +304,10 @@ button{
 .portfolio_wrapper .card:hover span{
     background-position: bottom center;
 }
+
+
 /* Contact */
+
 .contact_wrapper .form-control,
 .contact_wrapper textarea{
     background-color: transparent;
@@ -336,13 +339,14 @@ button{
 /* POP UP TEXT after clicking SUBMIT */
 
 h5.popuptxt{
-    color: var(--text-white);
+    color: var(--primary-color);
+    font-size: small;
     margin-top: -10px;
     display: inline-block;
     text-align: center;
     position: relative;
-    left: 200px;
-    top: 70px;
+    left: 190px;
+    top: 20px;
 }
 
 /* footer */
