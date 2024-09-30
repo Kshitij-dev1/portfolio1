@@ -310,7 +310,7 @@
                     <input name="Name" type="text" class="form-control" placeholder="Your Name......" autocomplete="off" required>
                 </div>
                 <div class="mb-4">
-                    <input name="Number" type="number" class="form-control" placeholder="Your Phone......" autocomplete="off" >
+                    <input name="Number" type="number" class="form-control" placeholder="Your Phone......" autocomplete="off" required >
                 </div>
                 <div class="mb-4">
                     <input name="Email" type="email" class="form-control" placeholder="Your Email......" autocomplete="off" required>
@@ -323,7 +323,7 @@
             <h5 class="popuptxt" id="msg"></h5>
            </div>
            <div class="col-lg-6 order-1 mb-4 order-lg-1 mb-lg-0">
-            <img src="./images/contact1.jpeg" alt="photo" class="img-fluid">
+            <img src="./images/contact1.jpeg" alt="photo" class="img-fluid rounded-3">
            </div>
            
         </div>
@@ -337,7 +337,9 @@
         <div class="row align-items-center">
             <div class="col-lg-4 col-md-6 text-center text-md-start">
                 <div class="footer_logo mb-3 mb-md-0">
+                <a href="#">
                     <img src="images/logo6.png" alt="logo" class="img-fluid" >
+                </a>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
@@ -378,25 +380,6 @@
 <!-- Self Js links -->
  <script src="js/main.js"></script>
 
-<!-- Contect Form script -->
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbz2JdIvWRbQWIJRE6p1_7bTspr-nNBzR2anuwzOne8lzVBSmQaNYnxFH6f0zlSdLPm78Q/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message Sent Successfully &#9996"
-            setTimeout(function(){
-                msg.innerHTML =""
-            },3000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
-
+ 
 </body>
 </html>
